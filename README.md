@@ -1,17 +1,17 @@
 # Leaderboard
 Layout Structure
 
+![leaderboard](https://user-images.githubusercontent.com/22328716/128467185-ba4b0496-fce8-4849-a236-2822464a682a.png)
 
 
 ## Learning objectives
 
-- Use webpack to bundle JavaScript.
-- Learn how to use proper ES6 syntax.
-- Use ES6 modules to write modular JavaScript.
+- Understand how to use medium-fidelity wireframes to create a UI.
 ## Built With
 
-- JavaScript
-- Node.js
+- HTML/CSS
+- webpack
+- ES6 Syntax
 
 ## Getting Started
 
@@ -19,9 +19,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Clone the repo `https://github.com/luqmanmusah/to_do_list.git`
+- Clone the repo `https://github.com/luqmanmusah/leaderboard.git`
 - `cd` into the directory
-- checkout to the htmlstage branch `git checkout html_stage`
+- checkout to the setup branch `git checkout setup`
 - open in your desired code editor
 
 ## Author

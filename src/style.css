@@ -4,7 +4,7 @@ header {
 
 .main-container {
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 .box {
@@ -35,4 +35,12 @@ header {
 form {
   margin: 0 auto;
   width: min-content;
+}
+
+input {
+  margin: 10px;
+}
+
+.submit {
+  float: right;
 }

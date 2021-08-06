@@ -1,8 +1,7 @@
 # Leaderboard
 Layout Structure
 
-![leaderboard](https://user-images.githubusercontent.com/22328716/128467185-ba4b0496-fce8-4849-a236-2822464a682a.png)
-
+![leader](https://user-images.githubusercontent.com/22328716/128469320-d08c6ed5-b6f8-445d-9adf-97553e0cf770.png)
 
 ## Learning objectives
 

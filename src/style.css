@@ -37,7 +37,7 @@ form {
   width: min-content;
 }
 
-input {
+.text-inputs {
   margin: 10px;
 }
 

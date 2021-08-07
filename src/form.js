@@ -1,9 +1,10 @@
+/* eslint-disable import/extensions */
 import { addInfo } from './request';
 
 const sendData = async (name, score) => {
   await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/aQeQLOEMph5dw2BhyuYH/scores/', {
     method: 'POST',
-    body: JSON.stringify({ user: name, score: score }),
+    body: JSON.stringify({ user: name, score }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
@@ -17,6 +18,7 @@ const addScore = async () => {
   const regex = /(.*[a-z]){3}/i;
   const alerts = document.querySelectorAll('.alerts');
 
+  // eslint-disable-next-line max-len
   if (name.length >= 3 && name.length <= 20 && name.match(regex) && score < 10000 && score >= 0 && score.length > 0) {
     await sendData(name, score);
     addInfo(name, score);

@@ -15,7 +15,7 @@ header {
 .box .score-board {
   text-align: center;
   justify-content: space-around;
-} 
+}
 
 .box .score-form {
   text-align: center;
@@ -24,7 +24,7 @@ header {
 .board-title {
   display: flex;
   margin: 0;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 .score-title {

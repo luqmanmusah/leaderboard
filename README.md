@@ -1,4 +1,5 @@
 # Leaderboard
+
 Hit API
 
 ![lead](https://user-images.githubusercontent.com/22328716/128612343-07ebad31-19a4-46ca-81a5-6381f280e902.png)
@@ -9,7 +10,10 @@ Hit API
 - Use API documentation.
 - Understand and use JSON.
 - Make JavaScript code asynchronous.
-  ## Built With
+
+ ## Built With
+
+## Built With
 
 - HTML/CSS
 - webpack

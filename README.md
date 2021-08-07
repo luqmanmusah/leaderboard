@@ -1,8 +1,9 @@
 # Leaderboard
 
-Hit API
+Final Touches- Add styling
 
-![lead](https://user-images.githubusercontent.com/22328716/128612343-07ebad31-19a4-46ca-81a5-6381f280e902.png)
+
+![l](https://user-images.githubusercontent.com/22328716/128615134-7677e929-73f4-49dd-a866-471e3771df31.png)
 
 ## Learning objectives
 
@@ -10,6 +11,7 @@ Hit API
 - Use API documentation.
 - Understand and use JSON.
 - Make JavaScript code asynchronous.
+- Add CSS styling
 
  ## Built With
 
@@ -27,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Clone the repo `https://github.com/luqmanmusah/leaderboard.git`
 - `cd` into the directory
-- checkout to the setup branch `git checkout api_call`
+- checkout to the setup branch `git checkout final_touches`
 - open in your desired code editor
 
 ## Author

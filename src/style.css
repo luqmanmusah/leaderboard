@@ -1,0 +1,46 @@
+header {
+  font-size: 50px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  flex: 1;
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.box .score-board {
+  text-align: center;
+  justify-content: space-around;
+}
+
+.box .score-form {
+  text-align: center;
+}
+
+.board-title {
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.score-title {
+  margin: 0;
+}
+
+form {
+  margin: 0 auto;
+  width: min-content;
+}
+
+input {
+  margin: 10px;
+}
+
+.submit {
+  float: right;
+}

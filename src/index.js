@@ -1,56 +1,21 @@
-import _ from 'lodash';
 import './style.css';
-import Request from './request.js';
-import submitOrNota from './form.js';
+import addScore from './form';
+import { displayTable } from './request';
 
-const refreshBtn = document.getElementById('refresh');
-const form = document.getElementById('form');
-const list = document.querySelector('.list');
-const nameInput = document.getElementById('name-input');
-const scoreInput = document.getElementById('score-input');
+const submit = document.querySelector('.submit');
+const refresh = document.querySelector('.refresh');
 
-const scores = new Request();
+displayTable();
 
-function ShowOne(object) {
-  const div = document.createElement('div');
-  div.textContent = `${object.user}: ${object.score}`;
-  div.classList.add('score');
-  list.appendChild(div);
-}
-
-function showAll(objectList) {
-  objectList.forEach((object) => {
-    ShowOne(object);
-  });
-}
-
-function antiShowall(list) {
-  while (list.lastElementChild) {
-    list.removeChild(list.lastElementChild);
-  }
-}
-
-function refresh(scores) {
-  setTimeout(async () => {
-    await scores.getScore();
-    antiShowall(list);
-    showAll(scores.scoreList);
-  }, 10);
-}
-
-refreshBtn.addEventListener('click', () => {
-  refresh(scores);
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+  addScore();
+  document.querySelector('form').reset();
 });
 
-form.addEventListener('submit', (event) => {
-  submitOrNota(event, scoreInput, nameInput);
-  refresh(scores);
+refresh.addEventListener('click', (e) => {
+  e.preventDefault();
+  const tableToDelete = document.querySelector('.list');
+  tableToDelete.innerHTML = '';
+  displayTable();
 });
-
-const init = async () => {
-  refresh(scores);
-};
-
-/* eslint-disable*/
-onload = init();
-/* eslint-enable */

@@ -1,25 +1,25 @@
-const request = new XMLHttpRequest();
-const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/aQeQLOEMph5dw2BhyuYH/scores/'
-
-export default class Request {
-    constructor() {
-      this.scoreList = [];
-    }
+const getUsers = async () => {
+    const request = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/aQeQLOEMph5dw2BhyuYH/scores/');
+    const data = await request.json();
+    return data;
+  };
   
-    async getScore() {
-      const promise = new Promise((myResolve) => {
-        request.open('GET', requestURL);
-        request.onload = () => {
-          if (request.status === 200) {
-            myResolve(request.response);
-          } else {
-            myResolve('Error');
-          }
-        };
-        request.send();
-      });
-      const list = JSON.parse(await promise);
-      this.scoreList = list.result;
-      this.scoreList.sort((a, b) => b.score - a.score);
-    }
-  }
+  export const addInfo = (user, score) => {
+    const table = document.querySelector('.list');
+    const tableRow = document.createElement('tr');
+    const tableName = document.createElement('td');
+    tableName.innerHTML = user;
+    tableRow.appendChild(tableName);
+    const tableScore = document.createElement('td');
+    tableScore.innerHTML = score;
+    tableRow.appendChild(tableScore);
+    table.appendChild(tableRow);
+  };
+  
+  export const displayTable = async () => {
+    const ans = await getUsers();
+    const userArr = ans.result;
+    userArr.forEach((item) => {
+      addInfo(item.user, item.score);
+    });
+  };

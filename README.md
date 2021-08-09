@@ -22,7 +22,7 @@ Final Touches- Add styling
 - ES6 Syntax
 
 ## Getting Started
-
+. 
 To get a local copy up and running follow these simple example steps.
 
 ### Setup

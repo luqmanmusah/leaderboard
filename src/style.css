@@ -1,3 +1,10 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-image: linear-gradient(#33d10c, #8ee970);
+  height: 100%;
+}
+
 header {
   font-size: 50px;
 }
@@ -15,7 +22,18 @@ header {
 
 .box .score-board {
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.list {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  width: 80%;
+  height: 300px;
+  overflow-y: scroll;
+  border: black;
+  border-style: solid;
 }
 
 .box .score-form {
